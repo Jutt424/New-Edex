@@ -1,0 +1,22 @@
+/* Hide Scrollbar in Terminal */
+.xterm .xterm-viewport {
+    overflow: hidden !important;
+  }
+  
+  .terminal-output::-webkit-scrollbar {
+    width: 4px;
+  }
+  .terminal-output::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 255, 0.5);
+    border-radius: 4px;
+  }
+  
+  /* Blinking Cursor Effect */
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  .animate-pulse {
+    animation: blink 0.8s infinite;
+  }

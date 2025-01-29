@@ -1,0 +1,48 @@
+/* General Keyboard Styling */
+.neon-keyboard {
+    background: transparent; /* Fully Transparent */
+    width: 100%; /* Full Width */
+    margin: auto;
+}
+
+/* Key Styling */
+.hg-button {
+    background: transparent !important; /* No Background */
+    color: #97b9bb !important; /* Neon Text */
+    font-family: "Courier New", monospace;
+    transition: all 0.2s ease;
+    font-size: 12px;
+    padding: 5px;
+    border: 1px solid #97b9bb !important; /* Neon Cyan Border */
+    box-shadow: none !important; /* Remove Shadow */
+}
+
+/* Hover Effect */
+.hg-button:hover {
+    background: transparent !important; /* No Fill */
+    border-color: rgb(90, 110, 110) !important; /* Stronger Neon */
+}
+
+/* Active Pressed Key Effect */
+.hg-button:active {
+    background: rgba(0, 255, 255, 0.2) !important;
+    color: black !important;
+}
+
+/* Special Keys (Smaller Font for Better Fit) */
+.smaller-key {
+    font-size: 10px !important;
+    padding: 8px !important;
+}
+
+/* Make Keyboard Full Width */
+.keyboard-container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+/* Ensure Keys Fill Space */
+.hg-theme-default {
+    width: 100% !important;
+}
