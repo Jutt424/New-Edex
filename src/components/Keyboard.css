@@ -8,7 +8,7 @@
 /* Key Styling */
 .hg-button {
     background: transparent !important; /* No Background */
-    color: #97b9bb !important; /* Neon Text */
+    color: white !important; /* Neon Text */
     font-family: "Courier New", monospace;
     transition: all 0.2s ease;
     font-size: 12px;

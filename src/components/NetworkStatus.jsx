@@ -30,7 +30,7 @@ export default function NetworkStatus() {
   }, []);
 
   return (
-    <div className="p-4 text-[#7AA0A6] font-mono text-xs ">
+    <div className="p-4 text-[white] font-mono text-xs ">
       
       {/* Network Status */}
       <div className="mb-4">
@@ -88,8 +88,8 @@ export default function NetworkStatus() {
               <XAxis dataKey="time" hide />
               <YAxis domain={[0, 100]} hide />
               <Tooltip />
-              <Line type="monotone" dataKey="up" stroke="#7AA0A6" strokeWidth={1.5} dot={false} />
-              <Line type="monotone" dataKey="down" stroke="#7AA0A6" strokeWidth={1.5} dot={false} />
+              <Line type="monotone" dataKey="up" stroke="white" strokeWidth={1.5} dot={false} />
+              <Line type="monotone" dataKey="down" stroke="white" strokeWidth={1.5} dot={false} />
             </LineChart>
           </ResponsiveContainer>
         </div>

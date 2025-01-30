@@ -39,11 +39,11 @@ Memory: 4932MB / 7872MB`,
   }, [commandHistory]);
 
   return (
-    <div className="bg-[#1c1f21] border border-[#97b9bb] overflow-hidden text-[#97b9bb] rounded-lg shadow-lg p-4 h-full w-full">
+    <div className="bg-[#222021] border border-[#97b9bb] overflow-hidden text-[#white] rounded-lg shadow-lg p-4 h-full w-full">
       {/* Terminal Header */}
       <div className="text-xs mb-2 flex justify-between items-center border-b border-[#97b9bb] pb-2">
-        <span className="text-[#97b9bb]">MAIN SHELL</span>
-        <div className="flex gap-4 text-[#97b9bb]">
+        <span className="text-[white]">MAIN SHELL</span>
+        <div className="flex gap-4 text-[#white]">
           <span>EMPTY</span>
           <span>EMPTY</span>
           <span>EMPTY</span>
@@ -55,19 +55,19 @@ Memory: 4932MB / 7872MB`,
         {commandHistory.map((entry, i) => (
           <div key={i} className="mb-2">
             {entry.type === "command" && (
-              <span className="text-[#97b9bb]">{entry.text}</span>
+              <span className="text-[white]">{entry.text}</span>
             )}
             {entry.type === "output" && (
-              <pre className="text-[#97b9bb] whitespace-pre">{entry.text}</pre>
+              <pre className="text-[#white] whitespace-pre">{entry.text}</pre>
             )}
             {entry.type === "system" && (
-              <span className="text-[#97b9bb]">{entry.text}</span>
+              <span className="text-[white]">{entry.text}</span>
             )}
           </div>
         ))}
         {/* Blinking Cursor */}
         <div className="flex">
-          <span className="text-[#97b9bb]">~/edex-ui&gt;</span>
+          <span className="text-[white]">~/edex-ui&gt;</span>
           <span className="ml-1 animate-pulse">█</span>
         </div>
         <div ref={terminalEndRef} />

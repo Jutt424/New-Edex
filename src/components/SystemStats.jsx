@@ -59,7 +59,7 @@ export default function SystemStats() {
   }, [ramTotal]);
 
   return (
-    <div className="text-[#97b9bb] p-4 font-mono text-xs">
+    <div className="text-[white] font-mono text-xs">
       {/* Large Clock */}
       <div className="text-3xl tracking-widest text-center">{time}</div>
 
@@ -88,7 +88,7 @@ export default function SystemStats() {
             <XAxis dataKey="time" hide />
             <YAxis domain={[0, 100]} hide />
             <Tooltip />
-            <Line data={cpuData1} type="monotone" dataKey="usage" stroke="#97b9bb" strokeWidth={2} dot={false} animationDuration={800} />
+            <Line data={cpuData1} type="monotone" dataKey="usage" stroke="white" strokeWidth={2} dot={false} animationDuration={800} />
             {/* <Line data={cpuData2} type="monotone" dataKey="usage" stroke="#97b9bb" strokeWidth={2} dot={false} animationDuration={800} /> */}
           </LineChart>
         </ResponsiveContainer>
@@ -114,14 +114,14 @@ export default function SystemStats() {
       <div className="">
         <div className="text-xs">MEMORY</div>
         <div className="text-xs opacity-80 mt-1">USING {ramUsed.toFixed(1)} GB OUT OF {ramTotal} GB</div>
-        <div className="h-1 bg-[#97b9bb] mt-1" style={{ width: `${(ramUsed / ramTotal) * 100}%` }} />
+        <div className="h-1 bg-[white] mt-1" style={{ width: `${(ramUsed / ramTotal) * 100}%` }} />
       </div>
 
       {/* Swap Usage */}
       <div className="mb-4">
         <div className="text-xs mt-2">SWAP</div>
         <div className="text-xs opacity-80 mt-1">{swapUsed.toFixed(1)} GB</div>
-        <div className="h-1 bg-[#97b9bb] mt-1" style={{ width: `${(swapUsed / 1) * 100}%` }} />
+        <div className="h-1 bg-[white] mt-1" style={{ width: `${(swapUsed / 1) * 100}%` }} />
       </div>
 
       {/* Top Processes */}

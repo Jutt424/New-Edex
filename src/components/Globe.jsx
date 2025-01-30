@@ -11,7 +11,7 @@ export default function NetworkGlobe() {
       .backgroundColor("#00000000") // Transparent background
       .pointsData(generatePoints(200)) // Generate network dots
       .pointAltitude(0.02)
-      .pointColor(() => "#00FFFF")
+      .pointColor(() => "white")
       .pointRadius(0.3) // Smaller dots for subtle effect
       .width(250) // Set fixed width
       .height(250); // Set fixed height
